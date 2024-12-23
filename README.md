@@ -21,14 +21,6 @@ Sistem **JourneyMatch** menggunakan dataset yang di berjudul [Mountains vs. Beac
 | **Pets**                | Biner           | Menunjukkan apakah individu memiliki hewan peliharaan (0 = Tidak, 1 = Ya). |
 | **Environmental Concerns** | Biner       | Menunjukkan apakah individu memiliki kepedulian terhadap lingkungan (0 = Tidak, 1 = Ya). |
 
-## Technologies Used
-
-Proyek **JourneyMatch** menggunakan berbagai teknologi untuk membangun dan menjalankan sistem klasifikasi preferensi destinasi wisata. Berikut adalah teknologi utama yang digunakan:
-
-- **Python**: Bahasa pemrograman utama yang digunakan untuk pengembangan model machine learning dan aplikasi backend.
-- **Flask**: Framework web yang digunakan untuk membangun aplikasi backend, mengatur routing, dan menangani permintaan HTTP.
-- **Bootstrap**: Framework CSS yang digunakan untuk merancang antarmuka pengguna yang responsif dan menarik.
-
 ## Installation
 
 1. Clone repositori ini:
@@ -73,13 +65,30 @@ Proyek **JourneyMatch** menggunakan model deeplearning berbasis **Feedforward Ne
 
 ### Proses Model
 1.  **Load Model**: Melakukan mengambilan data dari platform github dan disimpan pada Pandas Dataframe
-2.  **Pra-pemrosesan Data**: Melakukan pembersihan dan pemrosesan data. Proses ini termasuk mengonversi variabel kategorikal menjadi representasi numerik, menangani nilai yang hilang, dan menstandarisasi fitur numerik.
-3. **Pembagian Data**: Data dibagi menjadi tiga subset: training, validation, dan test dengan rasio 80:10:10, guna memastikan bahwa model diuji pada data yang tidak terlihat selama pelatihan.
-4. **Pelatihan Model**: Model dilatih menggunakan data training dengan teknik cross-validation untuk mengoptimalkan hyperparameter dan mencegah overfitting. Algoritma Random Forest digunakan untuk membangun sejumlah pohon keputusan yang akan menghasilkan prediksi berdasarkan mayoritas suara.
-5. **Evaluasi Model**: Kinerja model dievaluasi menggunakan metrik seperti **akurasi**, **presisi**, **recall**, dan **F1-score** pada data test. Model yang telah dilatih mampu memprediksi preferensi destinasi wisata dengan akurasi yang tinggi.
-6. **Tuning Hyperparameter**: Proses pencarian hyperparameter dilakukan untuk meningkatkan kinerja model, termasuk pengaturan jumlah pohon keputusan, kedalaman pohon, dan parameter lainnya.
+2.  **EDA**: Melakukan analisis pada data guna mengetahui kualitas, struktur, dan isi dari dataset
+3.  **Pra-pemrosesan Data**: Melakukan pembersihan dan pemrosesan data. Proses ini termasuk encoding variabel kategorikal menjadi representasi numerik, dan menstandarisasi fitur numerik dengan StandarScaler.
+4. **Pembagian Data**: Data dibagi menjadi tiga subset: training, dan test dengan rasio 80:20
+5. **Pelatihan Model**: Model dilatih menggunakan 2 model deeplearning yaitu FNN dan Tabnet untuk mendapatkan perbandingan performa terbaik
+6. **Evaluasi Model**: Kinerja model dievaluasi menggunakan metrik seperti **akurasi**, **presisi**, **recall**, dan **F1-score** pada data test. tahap ini juga menentukan model terbaik dalam melakukan klasifikasi.
+7. **Menyimpan Model**: Model terlatih disimpan pada file dengan ekstensi .h5 dan .pth
+8. **Interpretabilitas Model**: Hasil prediksi dari model dijelaskan menggunakan SHAP
 
 ### Output Model
 Model ini menghasilkan prediksi berupa kategori destinasi wisata yang lebih disukai, yaitu:
-- **Pantai**: Prediksi untuk destinasi wisata pantai.
-- **Pegunungan**: Prediksi untuk destinasi wisata pegunungan.
+- **Beach**: Prediksi untuk destinasi wisata pantai.
+- **Mountain**: Prediksi untuk destinasi wisata pegunungan.
+
+## Detail Performa Model
+### Tabnet
+- Classification Report
+- Confussion Matrix
+
+### FNN
+- Classification Report
+- Confussion Matrix
+
+### Kesimpulan Hasil Performa
+- Classification Report
+- Confussion Matrix
+
+## Local Web Development
