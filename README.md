@@ -21,11 +21,11 @@ Sistem **JourneyMatch** menggunakan dataset yang di berjudul [Mountains vs. Beac
 | **Pets**                | Biner           | Menunjukkan apakah individu memiliki hewan peliharaan (0 = Tidak, 1 = Ya). |
 | **Environmental Concerns** | Biner       | Menunjukkan apakah individu memiliki kepedulian terhadap lingkungan (0 = Tidak, 1 = Ya). |
 
-## Installation
+## Website Installation
 
-1. Clone repositori ini:
+1. Download repositori ini:
    ```bash
-   git clone https://github.com/NurFakhri/2021-255-UAP-ML.git
+   https://drive.google.com/drive/folders/12s5f3qOUVaHh6H4jV5qZ4o2JRPaMRLOa?usp=drive_link
    ```
 
 2. Masuk ke direktori proyek:
@@ -33,7 +33,7 @@ Sistem **JourneyMatch** menggunakan dataset yang di berjudul [Mountains vs. Beac
    cd UAP
    ```
 
-3. Install dependensi yang diperlukan:
+3. Download dan Install dependensi yang diperlukan:
    ```bash
    pip install -r requirements.txt
    ```
@@ -71,7 +71,6 @@ Proyek **JourneyMatch** menggunakan model deeplearning berbasis **Feedforward Ne
 5. **Pelatihan Model**: Model dilatih menggunakan 2 model deeplearning yaitu FNN dan Tabnet untuk mendapatkan perbandingan performa terbaik
 6. **Evaluasi Model**: Kinerja model dievaluasi menggunakan metrik seperti **akurasi**, **presisi**, **recall**, dan **F1-score** pada data test. tahap ini juga menentukan model terbaik dalam melakukan klasifikasi.
 7. **Menyimpan Model**: Model terlatih disimpan pada file dengan ekstensi .h5 dan .pth
-8. **Interpretabilitas Model**: Hasil prediksi dari model dijelaskan menggunakan SHAP
 
 ### Output Model
 Model ini menghasilkan prediksi berupa kategori destinasi wisata yang lebih disukai, yaitu:
@@ -81,14 +80,23 @@ Model ini menghasilkan prediksi berupa kategori destinasi wisata yang lebih disu
 ## Detail Performa Model
 ### Tabnet
 - Classification Report
+  
+  ![Classification Report](tabnet.png)
 - Confussion Matrix
+  
+  ![Confussion Matrix](confusion%20matrix%20tabnet.png)
+
 
 ### FNN
 - Classification Report
+  
+  ![Classification Report](fnn.png)
 - Confussion Matrix
-
+  
+  ![Confussion Matrix](confusion%20matrix%20fnn.png)
 ### Kesimpulan Hasil Performa
-- Classification Report
-- Confussion Matrix
+- Classification Report: Akurasi tidak ada perbedaan yaitu sama-sama mendapatkan 100%. Namun, model FNN memiliki keunggulan dalam presisi kelas 1
+- Confussion Matrix: Menunjukan bahwa model FNN lebih sedikit dalam melakukan salah klasifikasi daripada model tabnet
 
 ## Local Web Development
+![Confussion Matrix](web%20page.png)
