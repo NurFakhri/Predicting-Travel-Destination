@@ -81,22 +81,22 @@ Model ini menghasilkan prediksi berupa kategori destinasi wisata yang lebih disu
 ### Tabnet
 - Classification Report
   
-  ![Classification Report](tabnet.png)
+  ![Classification Report](UAP/static/images/tabnet.png)
 - Confussion Matrix
   
-  ![Confussion Matrix](confusion%20matrix%20tabnet.png)
+  ![Confussion Matrix](UAP/static/images/confusion%20matrix%20tabnet.png)
 
 
 ### FNN
 - Classification Report
   
-  ![Classification Report](fnn.png)
+  ![Classification Report](UAP/static/images/fnn.png)
 - Confussion Matrix
   
-  ![Confussion Matrix](confusion%20matrix%20fnn.png)
+  ![Confussion Matrix](UAP/static/images/confusion%20matrix%20fnn.png)
 ### Kesimpulan Hasil Performa
 - Classification Report: Akurasi tidak ada perbedaan yaitu sama-sama mendapatkan 100%. Namun, model FNN memiliki keunggulan dalam presisi kelas 1
 - Confussion Matrix: Menunjukan bahwa model FNN lebih sedikit dalam melakukan salah klasifikasi daripada model tabnet
 
 ## Local Web Development
-![Confussion Matrix](web%20page.png)
+![Confussion Matrix](UAP/static/images/web%20page.png)
