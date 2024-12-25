@@ -23,22 +23,34 @@ Sistem **JourneyMatch** menggunakan dataset yang di berjudul [Mountains vs. Beac
 
 ## Website Installation
 
-1. Download repositori ini:
+1. **Download repositori ini**:
    ```bash
    git clone https://github.com/NurFakhri/2021-255-UAP-ML.git
    ```
 
-2. Masuk ke direktori proyek:
+2. **Masuk ke direktori proyek**:
    ```bash
    cd UAP
    ```
 
-3. Download dan Install dependensi yang diperlukan:
+3. **Buat dan aktifkan virtual environment**:
+   - **Untuk Windows**:
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   - **Untuk macOS/Linux**:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+
+4. **Download dan instal dependensi yang diperlukan**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Jalankan aplikasi atau model:
+5. **Jalankan aplikasi atau model**:
    ```bash
    python app.py
    ```
