@@ -1,6 +1,6 @@
 # Struktur Folder Web
 
-- static/images/: Kebutuhan UI web, dan hasil performa web
+- static/images/: Kebutuhan UI web, tampilan web dan hasil performa model
 - templates/: Kode frontend dari website (html, css)
 - FNN_UAP.pth: Hasil model terlatih yang tersimpan pada file ekstensi .pth
 - app.py: Kode backend dari website (Flask, python)
