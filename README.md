@@ -25,7 +25,7 @@ Sistem **JourneyMatch** menggunakan dataset yang di berjudul [Mountains vs. Beac
 
 1. Download repositori ini:
    ```bash
-   https://drive.google.com/drive/folders/12s5f3qOUVaHh6H4jV5qZ4o2JRPaMRLOa?usp=drive_link
+   git clone https://github.com/NurFakhri/2021-255-UAP-ML.git
    ```
 
 2. Masuk ke direktori proyek:
@@ -64,7 +64,7 @@ Proyek **JourneyMatch** menggunakan model deeplearning berbasis **Feedforward Ne
 *Source: [FNN: Architecture](https://www.geeksforgeeks.org/feedforward-neural-network/)*
 
 ### Proses Model
-1.  **Load Model**: Melakukan mengambilan data dari platform github dan disimpan pada Pandas Dataframe
+1.  **Load Data**: Melakukan mengambilan data dari platform github dan disimpan pada Pandas Dataframe
 2.  **EDA**: Melakukan analisis pada data guna mengetahui kualitas, struktur, dan isi dari dataset
 3.  **Pra-pemrosesan Data**: Melakukan pembersihan dan pemrosesan data. Proses ini termasuk encoding variabel kategorikal menjadi representasi numerik, dan menstandarisasi fitur numerik dengan StandarScaler.
 4. **Pembagian Data**: Data dibagi menjadi tiga subset: training, dan test dengan rasio 80:20
